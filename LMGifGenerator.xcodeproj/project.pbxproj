@@ -14,6 +14,11 @@
 		4888338F1B96C442004C93A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4888338E1B96C442004C93A3 /* Images.xcassets */; };
 		488833921B96C442004C93A3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 488833901B96C442004C93A3 /* LaunchScreen.xib */; };
 		4888339E1B96C442004C93A3 /* GifTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4888339D1B96C442004C93A3 /* GifTestTests.m */; };
+		488833A91B96C4B2004C93A3 /* LMGifGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 488833A81B96C4B2004C93A3 /* LMGifGenerator.m */; };
+		488833AB1B96C64E004C93A3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488833AA1B96C64E004C93A3 /* ImageIO.framework */; };
+		488833AD1B96C675004C93A3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488833AC1B96C675004C93A3 /* MobileCoreServices.framework */; };
+		48942E6C1B972F8300EFE644 /* LMScreenRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 48942E6B1B972F8300EFE644 /* LMScreenRecorder.m */; };
+		8FDA565E4A17F9F1DF29E964 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A21D61D958B84F80532BE1D3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4888337E1B96C441004C93A3 /* GifTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA3711BAB3BFEEB7F210B0D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4888337E1B96C441004C93A3 /* LMGifGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMGifGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		488833821B96C441004C93A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		488833831B96C441004C93A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		488833851B96C441004C93A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,9 +43,17 @@
 		4888338C1B96C442004C93A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4888338E1B96C442004C93A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		488833911B96C442004C93A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		488833971B96C442004C93A3 /* GifTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		488833971B96C442004C93A3 /* LMGifGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LMGifGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4888339C1B96C442004C93A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4888339D1B96C442004C93A3 /* GifTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifTestTests.m; sourceTree = "<group>"; };
+		488833A71B96C4B2004C93A3 /* LMGifGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMGifGenerator.h; sourceTree = "<group>"; };
+		488833A81B96C4B2004C93A3 /* LMGifGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMGifGenerator.m; sourceTree = "<group>"; };
+		488833AA1B96C64E004C93A3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		488833AC1B96C675004C93A3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		48942E6A1B972F8300EFE644 /* LMScreenRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMScreenRecorder.h; sourceTree = "<group>"; };
+		48942E6B1B972F8300EFE644 /* LMScreenRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMScreenRecorder.m; sourceTree = "<group>"; };
+		A21D61D958B84F80532BE1D3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D69C76E0E030B144240F42DE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488833AD1B96C675004C93A3 /* MobileCoreServices.framework in Frameworks */,
+				488833AB1B96C64E004C93A3 /* ImageIO.framework in Frameworks */,
+				8FDA565E4A17F9F1DF29E964 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,20 +77,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23C0596692FC336757698F00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A21D61D958B84F80532BE1D3 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		488833751B96C441004C93A3 = {
 			isa = PBXGroup;
 			children = (
+				488833AC1B96C675004C93A3 /* MobileCoreServices.framework */,
+				488833AA1B96C64E004C93A3 /* ImageIO.framework */,
 				488833801B96C441004C93A3 /* GifTest */,
 				4888339A1B96C442004C93A3 /* GifTestTests */,
 				4888337F1B96C441004C93A3 /* Products */,
+				7796147903D9D531964B26FA /* Pods */,
+				23C0596692FC336757698F00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		4888337F1B96C441004C93A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4888337E1B96C441004C93A3 /* GifTest.app */,
-				488833971B96C442004C93A3 /* GifTestTests.xctest */,
+				4888337E1B96C441004C93A3 /* LMGifGenerator.app */,
+				488833971B96C442004C93A3 /* LMGifGeneratorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +118,10 @@
 				4888338E1B96C442004C93A3 /* Images.xcassets */,
 				488833901B96C442004C93A3 /* LaunchScreen.xib */,
 				488833811B96C441004C93A3 /* Supporting Files */,
+				488833A71B96C4B2004C93A3 /* LMGifGenerator.h */,
+				488833A81B96C4B2004C93A3 /* LMGifGenerator.m */,
+				48942E6A1B972F8300EFE644 /* LMScreenRecorder.h */,
+				48942E6B1B972F8300EFE644 /* LMScreenRecorder.m */,
 			);
 			path = GifTest;
 			sourceTree = "<group>";
@@ -119,29 +152,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7796147903D9D531964B26FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D69C76E0E030B144240F42DE /* Pods.debug.xcconfig */,
+				0AA3711BAB3BFEEB7F210B0D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4888337D1B96C441004C93A3 /* GifTest */ = {
+		4888337D1B96C441004C93A3 /* LMGifGenerator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 488833A11B96C442004C93A3 /* Build configuration list for PBXNativeTarget "GifTest" */;
+			buildConfigurationList = 488833A11B96C442004C93A3 /* Build configuration list for PBXNativeTarget "LMGifGenerator" */;
 			buildPhases = (
+				F64830BADE5C25D3AF4B0BBF /* Check Pods Manifest.lock */,
 				4888337A1B96C441004C93A3 /* Sources */,
 				4888337B1B96C441004C93A3 /* Frameworks */,
 				4888337C1B96C441004C93A3 /* Resources */,
+				88F7465094523729D4473E9F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = GifTest;
+			name = LMGifGenerator;
 			productName = GifTest;
-			productReference = 4888337E1B96C441004C93A3 /* GifTest.app */;
+			productReference = 4888337E1B96C441004C93A3 /* LMGifGenerator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		488833961B96C442004C93A3 /* GifTestTests */ = {
+		488833961B96C442004C93A3 /* LMGifGeneratorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 488833A41B96C442004C93A3 /* Build configuration list for PBXNativeTarget "GifTestTests" */;
+			buildConfigurationList = 488833A41B96C442004C93A3 /* Build configuration list for PBXNativeTarget "LMGifGeneratorTests" */;
 			buildPhases = (
 				488833931B96C442004C93A3 /* Sources */,
 				488833941B96C442004C93A3 /* Frameworks */,
@@ -152,9 +196,9 @@
 			dependencies = (
 				488833991B96C442004C93A3 /* PBXTargetDependency */,
 			);
-			name = GifTestTests;
+			name = LMGifGeneratorTests;
 			productName = GifTestTests;
-			productReference = 488833971B96C442004C93A3 /* GifTestTests.xctest */;
+			productReference = 488833971B96C442004C93A3 /* LMGifGeneratorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -175,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 488833791B96C441004C93A3 /* Build configuration list for PBXProject "GifTest" */;
+			buildConfigurationList = 488833791B96C441004C93A3 /* Build configuration list for PBXProject "LMGifGenerator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -188,8 +232,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4888337D1B96C441004C93A3 /* GifTest */,
-				488833961B96C442004C93A3 /* GifTestTests */,
+				4888337D1B96C441004C93A3 /* LMGifGenerator */,
+				488833961B96C442004C93A3 /* LMGifGeneratorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +258,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		88F7465094523729D4473E9F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F64830BADE5C25D3AF4B0BBF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4888337A1B96C441004C93A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,7 +298,9 @@
 			files = (
 				4888338A1B96C442004C93A3 /* ViewController.m in Sources */,
 				488833871B96C441004C93A3 /* AppDelegate.m in Sources */,
+				488833A91B96C4B2004C93A3 /* LMGifGenerator.m in Sources */,
 				488833841B96C441004C93A3 /* main.m in Sources */,
+				48942E6C1B972F8300EFE644 /* LMScreenRecorder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +317,7 @@
 /* Begin PBXTargetDependency section */
 		488833991B96C442004C93A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4888337D1B96C441004C93A3 /* GifTest */;
+			target = 4888337D1B96C441004C93A3 /* LMGifGenerator */;
 			targetProxy = 488833981B96C442004C93A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -345,21 +424,23 @@
 		};
 		488833A21B96C442004C93A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D69C76E0E030B144240F42DE /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GifTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LMGifGenerator;
 			};
 			name = Debug;
 		};
 		488833A31B96C442004C93A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA3711BAB3BFEEB7F210B0D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GifTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LMGifGenerator;
 			};
 			name = Release;
 		};
@@ -377,7 +458,7 @@
 				);
 				INFOPLIST_FILE = GifTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LMGifGeneratorTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GifTest.app/GifTest";
 			};
 			name = Debug;
@@ -392,7 +473,7 @@
 				);
 				INFOPLIST_FILE = GifTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LMGifGeneratorTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GifTest.app/GifTest";
 			};
 			name = Release;
@@ -400,7 +481,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		488833791B96C441004C93A3 /* Build configuration list for PBXProject "GifTest" */ = {
+		488833791B96C441004C93A3 /* Build configuration list for PBXProject "LMGifGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4888339F1B96C442004C93A3 /* Debug */,
@@ -409,21 +490,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		488833A11B96C442004C93A3 /* Build configuration list for PBXNativeTarget "GifTest" */ = {
+		488833A11B96C442004C93A3 /* Build configuration list for PBXNativeTarget "LMGifGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				488833A21B96C442004C93A3 /* Debug */,
 				488833A31B96C442004C93A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		488833A41B96C442004C93A3 /* Build configuration list for PBXNativeTarget "GifTestTests" */ = {
+		488833A41B96C442004C93A3 /* Build configuration list for PBXNativeTarget "LMGifGeneratorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				488833A51B96C442004C93A3 /* Debug */,
 				488833A61B96C442004C93A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

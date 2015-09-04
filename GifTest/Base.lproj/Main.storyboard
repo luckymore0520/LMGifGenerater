@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +15,77 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXS-dK-jln">
+                                <rect key="frame" x="0.0" y="20" width="600" height="442"/>
+                                <color key="backgroundColor" red="1" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0m-NL-Qjj">
+                                <rect key="frame" x="264" y="546" width="72" height="34"/>
+                                <state key="normal" title="开始录屏">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="停止录屏"/>
+                                <connections>
+                                    <action selector="startRecording:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jyf-4G-dBN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cL1-XG-HPu">
+                                <rect key="frame" x="282" y="504" width="36" height="34"/>
+                                <state key="normal" title="重播">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="replay:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Q6A-kK-cPB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEZ-Xf-whj">
+                                <rect key="frame" x="264" y="462" width="72" height="34"/>
+                                <state key="normal" title="切换背景">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onChangeBackgroundButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2CO-ZN-UyF"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Ei-Gy-UYp">
+                                <rect key="frame" x="0.0" y="20" width="600" height="442"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gXS-dK-jln" secondAttribute="trailing" id="26K-dZ-cEn"/>
+                            <constraint firstItem="EEZ-Xf-whj" firstAttribute="top" secondItem="gXS-dK-jln" secondAttribute="bottom" id="29I-7Q-mQK"/>
+                            <constraint firstItem="R0m-NL-Qjj" firstAttribute="top" secondItem="cL1-XG-HPu" secondAttribute="bottom" constant="8" id="4ye-E7-p6p"/>
+                            <constraint firstItem="0Ei-Gy-UYp" firstAttribute="height" secondItem="gXS-dK-jln" secondAttribute="height" id="Bx6-cH-ge5"/>
+                            <constraint firstItem="0Ei-Gy-UYp" firstAttribute="width" secondItem="gXS-dK-jln" secondAttribute="width" id="ETD-O2-YV0"/>
+                            <constraint firstAttribute="centerX" secondItem="cL1-XG-HPu" secondAttribute="centerX" id="J7k-Rl-bRx"/>
+                            <constraint firstItem="cL1-XG-HPu" firstAttribute="top" secondItem="EEZ-Xf-whj" secondAttribute="bottom" constant="8" id="LAF-YE-f3A"/>
+                            <constraint firstItem="0Ei-Gy-UYp" firstAttribute="centerY" secondItem="gXS-dK-jln" secondAttribute="centerY" id="Nn2-C1-K2m"/>
+                            <constraint firstItem="gXS-dK-jln" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="TC9-Km-Zui"/>
+                            <constraint firstAttribute="centerX" secondItem="R0m-NL-Qjj" secondAttribute="centerX" id="V0l-q0-F9z"/>
+                            <constraint firstItem="cL1-XG-HPu" firstAttribute="centerX" secondItem="R0m-NL-Qjj" secondAttribute="centerX" id="Z1m-zj-cXQ"/>
+                            <constraint firstItem="0Ei-Gy-UYp" firstAttribute="centerX" secondItem="gXS-dK-jln" secondAttribute="centerX" id="fPR-b8-kpe"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="R0m-NL-Qjj" secondAttribute="bottom" constant="20" id="g55-SR-jFX"/>
+                            <constraint firstItem="cL1-XG-HPu" firstAttribute="top" secondItem="R0m-NL-Qjj" secondAttribute="bottom" constant="-4" id="haO-pb-OEA"/>
+                            <constraint firstAttribute="centerX" secondItem="EEZ-Xf-whj" secondAttribute="centerX" id="pxT-Vw-Mfb"/>
+                            <constraint firstItem="gXS-dK-jln" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="vOJ-T9-32d"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Z1m-zj-cXQ"/>
+                                <exclude reference="haO-pb-OEA"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="recordingView" destination="gXS-dK-jln" id="VYf-f9-lhZ"/>
+                        <outlet property="replayImageView" destination="0Ei-Gy-UYp" id="5G4-8I-JOI"/>
+                        <outlet property="startRecordingButton" destination="R0m-NL-Qjj" id="qZq-2l-Pec"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
